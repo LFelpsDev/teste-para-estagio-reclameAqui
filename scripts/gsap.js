@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .from(
       "#efeito-gsap2",
       {
-        duration: 1.4,
+        duration: 1.2,
         y: 50,
         opacity: 0,
         ease: "power3.out",

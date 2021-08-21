@@ -14,12 +14,10 @@
   box-sizing: border-box;
 }
 
-.ham {
-  display: none;
-}
 
 body, h1, input, h2, h3, h4, h5,h6, p, span, button {
   font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
 }
 
 body {
@@ -28,7 +26,7 @@ body {
   background-size: cover;
   width: 100vw;
   height: 100vh;
-  background-position: left bottom;
+  background-position: right top;
 }
 
 .container-header {
@@ -72,14 +70,15 @@ body {
 
 
 .content-main {
-  max-width: 1300px;
-  margin: 0 auto;
+  max-width: 1400px;
+  margin: 20px auto;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  
 
   img {
-    transform: scale(0.9);
+    transform: scale(0.8);
   }
 
   .message-marketing {
@@ -97,6 +96,7 @@ body {
   background: $background;
   max-width: 400px;
   border-radius: 10px;
+  margin: 0 40px;
   
 
   h2 {
@@ -110,6 +110,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    
 
     .button-zap {
       border: 0;
@@ -141,6 +142,7 @@ body {
       font-size: 1.2rem;
       color: $green-bold;
       cursor: pointer;
+      border-radius: 10px;
       transition: filter 0.3s;
 
       &:hover {
@@ -152,12 +154,13 @@ body {
       margin-top: 15px;
       height: 40px;
       width: 300px;
-      padding-left: 10px;
+      margin-left: 15px;
       background-color: $gray-form;
       border: 0;
       border-radius: 5px;
       border-bottom: 4px solid $gray;
       outline: 0;
+      padding-left: 20px;
     }
 
   }
@@ -171,16 +174,25 @@ body {
   .send-button {
     margin-top: 10px;
   }
-
+  .conte-form {
+    padding: 10px;
+  }
   .content-main {
     max-width: 500px;
     margin: 40px auto;
 
+    input {
+      width: 100%;
+      padding: 20px;
+      margin-right: 10px;
+      margin-top: 16px;
+
+    }
+
     img {
-      transform: scale(0.7);
-      display: block;
+      transform: scale(0.8);
       max-width: 400px;
-      margin: 50px auto;
+      margin-left: 40px;
     }
   } 
 }

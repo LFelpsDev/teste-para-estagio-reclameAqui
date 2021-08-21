@@ -29,7 +29,9 @@
         <span id="efeito-gsap2">Ranking Nacional</span>
         <div>
           <img class="efeito-gsap3" src="images/user.svg" alt="Usuário" />
-          <span class="efeito-gsap3">Entrar</span>
+          <div>
+            <span class="efeito-gsap3">Entrar</span>
+          </div>
         </div>
       </div>
     </header>
@@ -53,7 +55,7 @@
         <h2>CONTE O QUE ACONTECEU</h2>
         <div class="form-flex">
           <button class="button-zap">CONVERSAR PELO WHATSAPP</button>
-          <form>
+          <form action="index.html" method="POST">
             <div>
               <input type="text" placeholder="Nome" name="name" />
             </div>
@@ -66,16 +68,15 @@
             <div>
               <input type="text" placeholder="Nome da Empresa" name="empresa" />
             </div>
-
             <div>
               <input
-                type="datetime"
+                type="date"
                 placeholder="Data do Ocorrido"
                 name="data"
               />
             </div>
           </form>
-          <button class="send-button">ENVIAR</button>
+          <button type="submit" value="submit"  class="send-button">ENVIAR</button>
         </div>
       </aside>
     </main>
