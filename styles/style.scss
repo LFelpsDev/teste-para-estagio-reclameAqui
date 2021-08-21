@@ -100,7 +100,7 @@ body {
   
 
   h2 {
-    padding: 20px 40px 20px 40px;
+    padding: 20px 40px;
     color: $blue;
   }
 
@@ -176,23 +176,29 @@ body {
   }
   .conte-form {
     padding: 10px;
+    margin: 0 auto;
   }
   .content-main {
     max-width: 500px;
     margin: 40px auto;
+    
 
     input {
       width: 100%;
       padding: 20px;
       margin-right: 10px;
       margin-top: 16px;
+    }
 
+    .h2-form {
+      padding: 20px 0;
     }
 
     img {
-      transform: scale(0.8);
+      transform: scale(0.7);
       max-width: 400px;
-      margin-left: 40px;
+      margin-left: 50px;
+      border-radius: 10px';
     }
   } 
 }
