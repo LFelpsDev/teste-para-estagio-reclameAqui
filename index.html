@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="images/reclame_aqui.jpg" type="image/jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Reclame Aqui</title>
+  </head>
+  <body>
+    <!--INICIO HEADER-->
+    <header>
+      <div class="container-header">
+        <div>
+          <input
+            class="search"
+            id="efeito-gsap1"
+            type="text"
+            placeholder="Busque Por Uma Empresa"
+          />
+        </div>
+        <span id="efeito-gsap2">Ranking Nacional</span>
+        <div>
+          <img class="efeito-gsap3" src="images/user.svg" alt="Usuário" />
+          <span class="efeito-gsap3">Entrar</span>
+        </div>
+      </div>
+    </header>
+    <!--FIM HEADER-->
+
+    <main class="content-main">
+      <div id="efeito-gsap4" class="flex-container">
+        <div>
+          <img
+            id="img-reclame-aqui"
+            src="images/reclame_aqui.jpg"
+            alt="Reclame Aqui"
+          />
+        </div>
+        <div class="message-marketing">
+          <h2>A MELHOR FORMA DE SOLUÇÃO DE CONFLITO DOS CONSUMIDORES</h2>
+        </div>
+      </div>
+
+      <aside id="efeito-gsap5" class="conte-form">
+        <h2>CONTE O QUE ACONTECEU</h2>
+        <div class="form-flex">
+          <button class="button-zap">CONVERSAR PELO WHATSAPP</button>
+          <form>
+            <div>
+              <input type="text" placeholder="Nome" name="name" />
+            </div>
+            <div>
+              <input type="email" placeholder="E-mail" name="email" />
+            </div>
+            <div>
+              <input type="number" placeholder="Telefone" name="telefone" />
+            </div>
+            <div>
+              <input type="text" placeholder="Nome da Empresa" name="empresa" />
+            </div>
+
+            <div>
+              <input
+                type="datetime"
+                placeholder="Data do Ocorrido"
+                name="data"
+              />
+            </div>
+          </form>
+          <button class="send-button">ENVIAR</button>
+        </div>
+      </aside>
+    </main>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"
+      integrity="sha512-2fk3Q4NXPYAqIha0glLZ2nluueK43aNoxvijPf53+DgL7UW9mkN+uXc1aEmnZdkkZVvtJZltpRt+JqTWc3TS3Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"
+      integrity="sha512-jNJOCd1PIjJoUa1XTDKaPdBLNUe4OJTrltKG+70O5ghYZ943nTRGIzjObwC2JtSm1fG7T06GbUApR2eirIU/jA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="scripts/gsap.js"></script>
+  </body>
+</html>
