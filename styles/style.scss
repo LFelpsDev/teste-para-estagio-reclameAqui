@@ -14,10 +14,14 @@
   box-sizing: border-box;
 }
 
+.pos-f-t {
+  display: none;
+}
 
-body, h1, input, h2, h3, h4, h5,h6, p, span, button {
+
+
+h1, input, h3, h4, h5,h6, p, span, button {
   font-family: 'Poppins', sans-serif;
-  overflow-x: hidden;
 }
 
 body {
@@ -27,16 +31,17 @@ body {
   width: 100vw;
   height: 100vh;
   background-position: right top;
+  overflow-x: hidden;
 }
 
 .container-header {
   max-width: 1300px;
   margin: 0 auto;
-  height: 4.37rem;
+  height: 4.30rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 3.75rem;
+  margin-top: 3.20rem;
   gap: 5rem;
 
   input{
@@ -69,11 +74,12 @@ body {
 }
 
 
+
 .content-main {
   max-width: 1400px;
   margin: 20px auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   
 
@@ -94,7 +100,7 @@ body {
 
 .conte-form {
   background: $background;
-  max-width: 400px;
+  max-width: 500px;
   border-radius: 10px;
   margin: 0 40px;
   
@@ -102,6 +108,7 @@ body {
   h2 {
     padding: 20px 40px;
     color: $blue;
+    text-align: center;
   }
 
   .form-flex {
@@ -109,12 +116,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
     
 
     .button-zap {
       border: 0;
-      padding: 10px 20px;
+      padding: 10px;
       background: $green-light;
       border-radius: 5px;
       color: white;
@@ -151,10 +157,9 @@ body {
     }
 
     input {
-      margin-top: 15px;
       height: 40px;
       width: 300px;
-      margin-left: 15px;
+      margin: 15px;
       background-color: $gray-form;
       border: 0;
       border-radius: 5px;
@@ -170,9 +175,6 @@ body {
 @media (max-width: 1040px) {
   .container-header, .message-marketing{
     display: none;
-  }
-  .send-button {
-    margin-top: 10px;
   }
   .conte-form {
     padding: 10px;
@@ -190,17 +192,17 @@ body {
       margin-top: 16px;
     }
 
-    .h2-form {
-      padding: 20px 0;
-    }
-
-    img {
-      transform: scale(0.7);
-      max-width: 400px;
-      margin-left: 50px;
-      border-radius: 10px';
-    }
-  } 
+   #container-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+   }
+  }
+  .pos-f-t {
+    display: block;
+  }
 }
 
 

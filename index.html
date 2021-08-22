@@ -10,11 +10,29 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <title>Reclame Aqui</title>
   </head>
   <body>
+
+    <div class="pos-f-t position-absolute top-0 end-0">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="">
+          <h4 class="text-white"></h4>
+          <span class="text-muted"></span>
+        </div>
+      </div>
+      
+      <nav class="navbar navbar-dark p-3">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
+    </div>
+
+
     <!--INICIO HEADER-->
     <header>
       <div class="container-header">
@@ -24,6 +42,7 @@
             id="efeito-gsap1"
             type="text"
             placeholder="Busque Por Uma Empresa"
+            id="frmButton"
           />
         </div>
         <span id="efeito-gsap2">Ranking Nacional</span>
@@ -37,9 +56,10 @@
     </header>
     <!--FIM HEADER-->
 
+    
     <main class="content-main">
       <div id="efeito-gsap4" class="flex-container">
-        <div>
+        <div id="container-img">
           <img
             id="img-reclame-aqui"
             src="images/reclame_aqui.jpg"
@@ -52,10 +72,11 @@
       </div>
 
       <aside id="efeito-gsap5" class="conte-form">
-        <h2 class="h2-form">CONTE O QUE ACONTECEU</h2>
+        <h2 class="h2-form">RECLAMAÇÃO</h2>
         <div class="form-flex">
           <button class="button-zap">CONVERSAR PELO WHATSAPP</button>
-          <form action="index.html" method="POST">
+
+          <form id="frmDate" method="POST">
             <div>
               <input type="text" placeholder="Nome" name="name" />
             </div>
@@ -73,18 +94,22 @@
                 type="date"
                 placeholder="Data do Ocorrido"
                 name="data"
+                id="data"
               />
             </div>
+            <div>
+              <p id="resultado"></p>
+            </div>
           </form>
-          <button type="submit" value="submit"  class="send-button">ENVIAR</button>
+          <button type="submit" value="submit" class="send-button">
+            ENVIAR
+          </button>
         </div>
       </aside>
     </main>
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"
       integrity="sha512-2fk3Q4NXPYAqIha0glLZ2nluueK43aNoxvijPf53+DgL7UW9mkN+uXc1aEmnZdkkZVvtJZltpRt+JqTWc3TS3Q=="
@@ -98,6 +123,7 @@
       referrerpolicy="no-referrer"
     ></script>
 
-    <script src="scripts/gsap.js"></script>
+    <script src="/scripts/gsap.js"></script>
+    </script>
   </body>
 </html>
